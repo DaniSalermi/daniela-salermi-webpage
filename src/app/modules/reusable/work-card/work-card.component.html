@@ -1,18 +1,18 @@
 <div class="work-card">
   <div class="tittle">
-    <h3>Proyecto Laboratoria</h3>
+    <h3>{{ title }}</h3>
   </div>
   <div class="info">
     <div class="name-and-type">
       <h2 class="dark">
-        Battlezombie
+        {{ projectName }}
       </h2>
       <h2>
-        Video juego
+        {{ projectType }}
       </h2>
     </div>
     <div class="image">
-      <img src="assets/battlezombie-home-mockup.png" alt="mockup de proyecto" />
+      <img [src]="imageURL" alt="mockup de proyecto" />
     </div>
   </div>
   <div class="access">
