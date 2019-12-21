@@ -1,9 +1,72 @@
 :root {
   --main-color: #191a1e;
   --secondary-color: #7abbf5;
+  --main-color-40: #a3a3a5;
+  --main-color-15: rgba(25, 26, 30, 0.15);
 }
 body {
   padding: 0;
   margin: 0;
   font-family: "Livvic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+nav ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.button {
+  display: flex;
+  border-radius: 30px;
+  padding: 17px 30px;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+
+  svg#icono-flecha {
+    margin-left: 14px;
+    fill: var(--main-color-40);
+    transform: scale(0.9) translateX(-2px);
+    transition: all 150ms ease-in;
+    transition-property: fill, transform;
+  }
+
+  &.light {
+    border: solid 1px var(--main-color-15);
+    background-color: #ffffff;
+    color: var(--main-color);
+
+    &:hover {
+      svg#icono-flecha {
+        fill: var(--main-color);
+        transform: scale(1) translateX(0);
+      }
+    }
+  }
+
+  &.dark {
+    border: none;
+    background-color: var(--main-color);
+    color: #ffffff;
+
+    &:hover {
+      svg#icono-flecha {
+        fill: white;
+        transform: scale(1) translateX(0);
+      }
+    }
+  }
+}
+h3 {
+  font-size: 14px;
+  color: var(--main-color-40);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: inherit;
 }
