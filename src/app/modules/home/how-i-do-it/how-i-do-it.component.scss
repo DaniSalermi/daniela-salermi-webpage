@@ -1,0 +1,76 @@
+.how-i-do-it {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: var(--main-color);
+  flex-direction: column;
+  .square-button {
+    z-index: 3;
+    margin-top: -210px;
+  }
+  .background-how-i-do-it {
+    width: 100%;
+
+    z-index: 1;
+    h1 {
+      color: white;
+    }
+    .text-how-i-do-it {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      max-width: 1012px;
+      margin: 68px auto 194px;
+      padding: 0 44px;
+
+      .h1-style {
+        text-align: left;
+        align-self: flex-start;
+        justify-self: center;
+      }
+
+      .text-and-skills {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        p {
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+        }
+        span {
+          color: var(--secondary-color);
+          font-weight: 600;
+        }
+        .text {
+          max-width: 500px;
+          p {
+            font-size: 20px;
+            font-weight: normal;
+          }
+        }
+        .code-skills {
+          p {
+            color: white;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .photo-how-i-do-it {
+    background-image: url(/assets/how-i-do-it-photo.png);
+    width: 100vw;
+    max-width: 1100px;
+    height: 100vh;
+    max-height: 630px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    z-index: 2;
+    margin-top: -40px;
+  }
+}
