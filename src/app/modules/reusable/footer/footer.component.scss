@@ -8,13 +8,14 @@
     margin-top: 100px;
     margin-bottom: 25px;
   }
-
-  h1 {
+  h2.dark {
     margin-bottom: 45px;
+    font-size: 42px;
     span {
       color: var(--secondary-color);
     }
   }
+
   a {
     margin-bottom: 200px;
   }

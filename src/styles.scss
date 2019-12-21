@@ -3,6 +3,8 @@
   --secondary-color: #7abbf5;
   --main-color-40: #a3a3a5;
   --main-color-15: rgba(25, 26, 30, 0.15);
+  --background-cards: #eef0f0;
+  --tittle-color: #fa605e;
 }
 body {
   padding: 0;
@@ -19,13 +21,28 @@ nav ul {
 h1,
 .h1-style {
   display: block;
-  font-size: 2em;
+  font-size: 48px;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
 
+  &.dark {
+    color: var(--main-color);
+  }
+
+  &.light {
+    color: white;
+  }
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   &.dark {
     color: var(--main-color);
   }
@@ -48,7 +65,7 @@ a {
   font-size: 15px;
   cursor: pointer;
   span {
-    width: 70px;
+    width: 130px;
   }
 
   svg#icono-flecha {
