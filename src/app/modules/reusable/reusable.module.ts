@@ -6,6 +6,7 @@ import { MenuComponent } from "./menu/menu.component";
 import { RrssBarComponent } from "./rrss-bar/rrss-bar.component";
 import { WorkCardComponent } from "./work-card/work-card.component";
 import { WorkCardLargeComponent } from "./work-card-large/work-card-large.component";
+import { WorkGalleryComponent } from "./work-gallery/work-gallery.component";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WorkCardLargeComponent } from "./work-card-large/work-card-large.compon
     MenuComponent,
     RrssBarComponent,
     WorkCardComponent,
-    WorkCardLargeComponent
+    WorkCardLargeComponent,
+    WorkGalleryComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -22,7 +24,8 @@ import { WorkCardLargeComponent } from "./work-card-large/work-card-large.compon
     FooterComponent,
     RrssBarComponent,
     WorkCardComponent,
-    WorkCardLargeComponent
+    WorkCardLargeComponent,
+    WorkGalleryComponent
   ]
 })
 export class ReusableModule {}
