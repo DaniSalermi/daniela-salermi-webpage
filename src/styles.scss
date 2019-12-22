@@ -132,4 +132,12 @@ h4 {
       fill: white;
     }
   }
+  &.light {
+    transform: rotate(180deg);
+    background-color: #f1f1f1;
+  }
+  &.dark {
+    background-color: var(--main-color);
+    fill: white;
+  }
 }
