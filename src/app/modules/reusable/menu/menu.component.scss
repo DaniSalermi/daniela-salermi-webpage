@@ -10,11 +10,24 @@
   align-items: center;
   justify-content: center;
   color: white;
+  transform: translateY(-100vh);
+  transition: transform 400ms ease-in-out;
+
+  &.active {
+    transform: translateY(0);
+
+    .right,
+    .left {
+      opacity: 1;
+    }
+  }
   .left {
+    opacity: 0;
     flex: 1;
     display: flex;
     justify-content: center;
 
+    transition: opacity 250ms ease-in-out 250ms;
     .image {
       margin-bottom: 40px;
       img {
@@ -39,9 +52,11 @@
   }
 
   .right {
+    opacity: 0;
     flex: 1;
     display: flex;
     justify-content: center;
+    transition: opacity 250ms ease-in-out 250ms;
     ul {
       margin: 0;
       padding: 0;

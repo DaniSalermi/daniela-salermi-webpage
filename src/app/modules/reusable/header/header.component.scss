@@ -1,12 +1,22 @@
+.background-header {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 130px;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 50px;
+  padding: 25px 50px;
   top: 25px;
-  z-index: 6;
   position: sticky;
+  mix-blend-mode: difference;
+  z-index: 6;
   .logo {
+    cursor: pointer;
     img {
       mix-blend-mode: difference;
     }
@@ -29,6 +39,7 @@
       }
     }
     .menu-icon {
+      cursor: pointer;
       img {
         width: 59px;
         mix-blend-mode: difference;

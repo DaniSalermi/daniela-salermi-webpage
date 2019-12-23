@@ -1,6 +1,7 @@
+<div class="background-header"></div>
 <div class="header">
   <div class="logo">
-    <a href="/"
+    <a routerLink="/"
       ><img src="assets/dani-logo.svg" alt="Logo Daniela Salermi" />
     </a>
   </div>
@@ -9,7 +10,7 @@
       <h1 class="active">ES</h1>
       <h1>EN</h1>
     </div>
-    <div class="menu-icon">
+    <div class="menu-icon" (click)="toggleMenu()">
       <img src="assets/menu-icon.svg" alt="Icono de menú hamburguesa" />
     </div>
   </div>

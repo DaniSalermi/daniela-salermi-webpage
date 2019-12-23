@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu" [ngClass]="{ active: menuActive }">
   <div class="left">
     <div>
       <div class="image">
@@ -18,10 +18,24 @@
   </div>
   <div class="right">
     <ul>
-      <li class="active">Inicio</li>
-      <li>Acerca de mi</li>
-      <li>Mis trabajos</li>
-      <li>Contacto</li>
+      <a routerLink="/" (click)="closeMenu()">
+        <li
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Inicio
+        </li>
+      </a>
+      <a routerLink="/about" (click)="closeMenu()">
+        <li routerLink="/about" routerLinkActive="active">Acerca de mi</li>
+      </a>
+      <a routerLink="/works" (click)="closeMenu()">
+        <li routerLink="/works" routerLinkActive="active">Mis trabajos</li>
+      </a>
+      <a routerLink="/contact" (click)="closeMenu()">
+        <li routerLink="/contact" routerLinkActive="active">Contacto</li>
+      </a>
     </ul>
   </div>
 </div>
