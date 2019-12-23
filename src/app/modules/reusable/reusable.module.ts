@@ -25,7 +25,8 @@ import { WorkGalleryComponent } from "./work-gallery/work-gallery.component";
     RrssBarComponent,
     WorkCardComponent,
     WorkCardLargeComponent,
-    WorkGalleryComponent
+    WorkGalleryComponent,
+    MenuComponent
   ]
 })
 export class ReusableModule {}

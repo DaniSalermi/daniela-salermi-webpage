@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: space-between;
   margin: 25px 50px;
-  top: 0;
-  background-color: white;
+  top: 25px;
+  z-index: 6;
+  position: sticky;
   .logo {
     img {
       mix-blend-mode: difference;
@@ -28,9 +29,9 @@
       }
     }
     .menu-icon {
-      mix-blend-mode: difference;
       img {
         width: 59px;
+        mix-blend-mode: difference;
       }
     }
   }
