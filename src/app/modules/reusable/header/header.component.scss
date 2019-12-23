@@ -4,11 +4,18 @@
   justify-content: space-between;
   margin: 25px 50px;
   top: 0;
+  background-color: white;
+  .logo {
+    img {
+      mix-blend-mode: difference;
+    }
+  }
   .right-header {
     display: flex;
     align-items: center;
     .lenguages {
       display: flex;
+      display: none;
       h1 {
         font-size: 20px;
         font-weight: bold;
@@ -21,6 +28,7 @@
       }
     }
     .menu-icon {
+      mix-blend-mode: difference;
       img {
         width: 59px;
       }
