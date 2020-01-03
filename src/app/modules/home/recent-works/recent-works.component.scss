@@ -20,3 +20,28 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .recent-work {
+    margin-bottom: 0px;
+    .tittle-and-button {
+      display: flex;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+    .work-cards {
+      display: flex;
+      flex-direction: column;
+      :first-child {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

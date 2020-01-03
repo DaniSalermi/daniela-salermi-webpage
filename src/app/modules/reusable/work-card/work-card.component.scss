@@ -2,6 +2,7 @@
   background-color: var(--background-cards);
   width: 490px;
   padding: 40px 0 40px 40px;
+  overflow: hidden;
   cursor: pointer;
   .tittle {
     margin-bottom: 73px;
@@ -20,6 +21,8 @@
       height: 100%;
       max-width: 260px;
       max-height: 146px;
+      margin-right: -60px;
+      transition: margin 350ms ease-in-out;
     }
   }
   .access {
@@ -51,6 +54,52 @@
     }
     h4#see-more {
       color: var(--main-color);
+    }
+    .info {
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .work-card {
+    width: calc(100vw - 90px);
+    padding: 40px 0 40px 40px;
+    cursor: pointer;
+    .tittle {
+      margin-bottom: 30px;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      .name-and-type {
+        margin-right: 20px;
+        h2:last-child {
+          color: var(--tittle-color);
+        }
+      }
+      img {
+        width: 45vw;
+      }
+    }
+    .access {
+      display: flex;
+      justify-content: space-between;
+      svg {
+        fill: var(--main-color-40);
+      }
+
+      h4 {
+        text-transform: inherit;
+        font-weight: 600;
+        letter-spacing: inherit;
+        margin-right: 79px;
+        transition: color 250ms ease-in;
+      }
     }
   }
 }
