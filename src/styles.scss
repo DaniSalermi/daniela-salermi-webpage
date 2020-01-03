@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #191a1e;
+  --secondary-color: #7abbf5;
+  --main-color-40: #a3a3a5;
+  --main-color-15: rgba(25, 26, 30, 0.15);
+  --background-cards: #eef0f0;
+  --tittle-color: #fa605e;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: white;
+}
+nav ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+h1,
+.h1-style {
+  display: block;
+  font-size: 48px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
+  &.dark {
+    color: var(--main-color);
+  }
+
+  &.light {
+    color: white;
+  }
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  &.dark {
+    color: var(--main-color);
+  }
+
+  &.light {
+    color: white;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.button {
+  display: flex;
+  border-radius: 30px;
+  padding: 17px 28px;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  span {
+    width: 130px;
+  }
+
+  svg#icono-flecha {
+    margin-left: 14px;
+    fill: var(--main-color-40);
+    transform: scale(0.9) translateX(-2px);
+    transition: all 150ms ease-in;
+    transition-property: fill, transform;
+  }
+
+  &.light {
+    border: solid 1px var(--main-color-15);
+    background-color: #ffffff;
+    color: var(--main-color);
+
+    &:hover {
+      svg#icono-flecha {
+        fill: var(--main-color);
+        transform: scale(1) translateX(0);
+      }
+    }
+  }
+
+  &.dark {
+    border: none;
+    background-color: var(--main-color);
+    color: #ffffff;
+
+    &:hover {
+      svg#icono-flecha {
+        fill: white;
+        transform: scale(1) translateX(0);
+      }
+    }
+  }
+}
+h3 {
+  font-size: 14px;
+  color: var(--main-color-40);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: inherit;
+}
+h4 {
+  font-size: 15px;
+  color: var(--main-color-40);
+  font-weight: 600;
+  margin: inherit;
+}
+.square-button {
+  width: 80px;
+  height: 80px;
+  z-index: 3;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.blue {
+    svg {
+      transform: rotate(90deg);
+      fill: white;
+    }
+  }
+  &.light {
+    transform: rotate(180deg);
+    background-color: #f1f1f1;
+  }
+  &.dark {
+    background-color: var(--main-color);
+    fill: white;
+  }
+}

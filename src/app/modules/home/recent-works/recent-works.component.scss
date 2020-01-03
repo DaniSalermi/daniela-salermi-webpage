@@ -1,0 +1,22 @@
+.recent-work {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 160px;
+  .tittle-and-button {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    :first-child {
+      margin-right: 40px;
+    }
+  }
+  .work-cards {
+    display: flex;
+    :first-child {
+      margin-right: 40px;
+    }
+  }
+}

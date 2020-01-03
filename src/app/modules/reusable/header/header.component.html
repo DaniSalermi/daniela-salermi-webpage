@@ -1,1 +1,17 @@
-<p>header works!</p>
+<div class="background-header"></div>
+<div class="header">
+  <div class="logo">
+    <a routerLink="/"
+      ><img src="assets/dani-logo.svg" alt="Logo Daniela Salermi" />
+    </a>
+  </div>
+  <div class="right-header">
+    <div class="lenguages">
+      <h1 class="active">ES</h1>
+      <h1>EN</h1>
+    </div>
+    <div class="menu-icon" (click)="toggleMenu()">
+      <img src="assets/menu-icon.svg" alt="Icono de menú hamburguesa" />
+    </div>
+  </div>
+</div>

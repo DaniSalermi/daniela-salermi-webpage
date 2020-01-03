@@ -1,0 +1,41 @@
+<div class="menu" [ngClass]="{ active: menuActive }">
+  <div class="left">
+    <div>
+      <div class="image">
+        <img src="/assets/about-me-photo.jpg" width="80" height="80" alt="" />
+      </div>
+      <div class="detail">
+        <h3>detalle de contacto</h3>
+        <p>hola@danielasalermi.com</p>
+        <p>+56 9 5253 6682</p>
+      </div>
+      <div class="networks">
+        <h3>redes sociales</h3>
+        <p>instagram.com/danisalermi</p>
+        <p>linkedin.com/danielasalermi</p>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <ul>
+      <a routerLink="/" (click)="closeMenu()">
+        <li
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Inicio
+        </li>
+      </a>
+      <a routerLink="/about" (click)="closeMenu()">
+        <li routerLink="/about" routerLinkActive="active">Acerca de mi</li>
+      </a>
+      <a routerLink="/works" (click)="closeMenu()">
+        <li routerLink="/works" routerLinkActive="active">Mis trabajos</li>
+      </a>
+      <a routerLink="/contact" (click)="closeMenu()">
+        <li routerLink="/contact" routerLinkActive="active">Contacto</li>
+      </a>
+    </ul>
+  </div>
+</div>

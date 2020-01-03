@@ -1,0 +1,56 @@
+.work-card {
+  background-color: var(--background-cards);
+  width: 490px;
+  padding: 40px 0 40px 40px;
+  cursor: pointer;
+  .tittle {
+    margin-bottom: 73px;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    .name-and-type {
+      h2:last-child {
+        color: var(--tittle-color);
+      }
+    }
+    img {
+      height: 100%;
+      max-width: 260px;
+      max-height: 146px;
+    }
+  }
+  .access {
+    display: flex;
+    justify-content: space-between;
+    svg {
+      fill: var(--main-color-40);
+    }
+
+    h4 {
+      text-transform: inherit;
+      font-weight: 600;
+      letter-spacing: inherit;
+      margin-right: 79px;
+      transition: color 250ms ease-in;
+    }
+  }
+  svg#longarrow-icon {
+    margin-left: 14px;
+    fill: var(--main-color-40);
+    transform: scale(0.9) translateX(-2px) rotate(0);
+    transition: all 250ms ease-in;
+    transition-property: fill, transform;
+  }
+  &:hover {
+    svg#longarrow-icon {
+      fill: var(--main-color);
+      transform: scale(1) translateX(0) rotate(-45deg);
+    }
+    h4#see-more {
+      color: var(--main-color);
+    }
+  }
+}

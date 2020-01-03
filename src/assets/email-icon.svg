@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="20.566" viewBox="0 0 27 20.566">
+    <defs>
+        <style>
+            .cls-1{fill:#ffffff}
+        </style>
+    </defs>
+    <g id="email_1_" data-name="email (1)" transform="translate(0 -61)">
+        <g id="Grupo_4" data-name="Grupo 4" transform="translate(0 61)">
+            <path id="Trazado_23" d="M24.627 61H2.373A2.377 2.377 0 0 0 0 63.373v15.82a2.377 2.377 0 0 0 2.373 2.373h22.254A2.377 2.377 0 0 0 27 79.193v-15.82A2.377 2.377 0 0 0 24.627 61zm-.327 1.582L13.55 73.331 2.708 62.582zM1.582 78.866V63.693L9.2 71.247zM2.7 79.984l7.624-7.624L13 75.009a.791.791 0 0 0 1.116 0l2.6-2.6 7.584 7.575zm22.717-1.119l-7.583-7.583 7.584-7.582z" class="cls-1" data-name="Trazado 23" transform="translate(0 -61)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+.works-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  .first-section {
+    padding-top: 130px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    padding-bottom: 130px;
+    background-color: var(--background-cards);
+    .project-detail {
+      h3 {
+        margin-bottom: 8px;
+      }
+      h1 {
+        margin: 0;
+      }
+      .h1-style {
+        color: var(--tittle-color);
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      .button {
+        svg#icono-flecha {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .project-image {
+    align-items: center;
+    img {
+      max-width: 427px;
+    }
+  }
+
+  .second-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    align-self: center;
+    padding-top: 125px;
+    z-index: 1;
+    padding-bottom: 100px;
+    .about-project {
+      flex: 1.5;
+      max-width: 530px;
+      h3 {
+        margin-bottom: 5px;
+      }
+      .about-text {
+        line-height: 30px;
+      }
+    }
+
+    .tecnologies {
+      flex: 1.2;
+      padding-left: 80px;
+
+      .tech-detail {
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 4px;
+      }
+
+      .separator {
+        height: 1px;
+        width: 100%;
+        max-width: 340px;
+        background-color: var(--background-cards);
+        margin-bottom: 28px;
+      }
+    }
+  }
+}

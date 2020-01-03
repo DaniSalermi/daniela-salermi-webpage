@@ -1,0 +1,49 @@
+.background-header {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 130px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  top: 25px;
+  position: sticky;
+  mix-blend-mode: difference;
+  z-index: 6;
+  .logo {
+    cursor: pointer;
+    img {
+      mix-blend-mode: difference;
+    }
+  }
+  .right-header {
+    display: flex;
+    align-items: center;
+    .lenguages {
+      display: flex;
+      display: none;
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 15px;
+        color: rgba(25, 26, 30, 0.4);
+
+        &.active {
+          color: #191a1e;
+        }
+      }
+    }
+    .menu-icon {
+      cursor: pointer;
+      img {
+        width: 59px;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+}
