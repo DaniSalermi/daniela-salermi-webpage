@@ -168,3 +168,40 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .about-me {
+    .who-i-am {
+      padding-left: 40px;
+      margin: 40px 0;
+    }
+    .resume {
+      flex-direction: column;
+      max-height: inherit;
+      .facts {
+        padding: 60px 40px;
+        flex: inherit;
+      }
+      .photo {
+        flex: inherit;
+        max-height: 230px;
+      }
+    }
+  }
+  .gray-background {
+    padding-top: 60px;
+    margin-top: 0px;
+    .location {
+      flex-direction: column;
+      .info {
+        flex: inherit;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding: 0 40px;
+      }
+      .map {
+        max-width: 300px;
+      }
+    }
+  }
+}
