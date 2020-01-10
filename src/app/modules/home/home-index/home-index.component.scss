@@ -33,3 +33,40 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .index-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    padding-bottom: 200px;
+    background: white;
+
+    h3 {
+      margin: 25px 0;
+    }
+    h1 {
+      text-align: center;
+      position: relative;
+      margin: 0;
+      margin-bottom: 30px;
+
+      span {
+        color: var(--secondary-color);
+        .subindex {
+          display: none;
+        }
+      }
+    }
+    .buttons-index {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a:first-child {
+        margin-right: 0px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

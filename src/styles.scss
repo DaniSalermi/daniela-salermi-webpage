@@ -141,3 +141,64 @@ h4 {
     fill: white;
   }
 }
+
+@media (max-width: 600px) {
+  h1,
+  .h1-style {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 11px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .button {
+    display: flex;
+    border-radius: 30px;
+    padding: 17px 28px;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    span {
+      width: 130px;
+    }
+
+    svg#icono-flecha {
+      margin-left: 14px;
+      fill: var(--main-color-40);
+      transform: scale(0.9) translateX(-2px);
+      transition: all 150ms ease-in;
+      transition-property: fill, transform;
+    }
+
+    &.light {
+      border: solid 1px var(--main-color-15);
+      background-color: #ffffff;
+      color: var(--main-color);
+
+      &:hover {
+        svg#icono-flecha {
+          fill: var(--main-color);
+          transform: scale(1) translateX(0);
+        }
+      }
+    }
+
+    &.dark {
+      border: none;
+      background-color: var(--main-color);
+      color: #ffffff;
+
+      &:hover {
+        svg#icono-flecha {
+          fill: white;
+          transform: scale(1) translateX(0);
+        }
+      }
+    }
+  }
+}

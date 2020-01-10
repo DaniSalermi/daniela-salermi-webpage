@@ -47,3 +47,57 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .background-header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 73px;
+    z-index: 6;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    top: 15px;
+    position: sticky;
+    mix-blend-mode: difference;
+    z-index: 6;
+    .logo {
+      cursor: pointer;
+      img {
+        mix-blend-mode: difference;
+        width: 100px;
+        max-height: 30px;
+      }
+    }
+    .right-header {
+      display: flex;
+      align-items: center;
+      .lenguages {
+        display: flex;
+        // display: none;
+        h1 {
+          font-size: 14px;
+          font-weight: bold;
+          padding-right: 15px;
+          color: rgba(25, 26, 30, 0.4);
+
+          &.active {
+            color: #191a1e;
+          }
+        }
+      }
+      .menu-icon {
+        cursor: pointer;
+        img {
+          width: 22px;
+          mix-blend-mode: difference;
+        }
+      }
+    }
+  }
+}

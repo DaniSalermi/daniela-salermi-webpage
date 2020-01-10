@@ -72,3 +72,45 @@
     margin-top: -40px;
   }
 }
+
+@media (max-width: 600px) {
+  .how-i-do-it {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: var(--main-color);
+    flex-direction: column;
+    .square-button {
+      z-index: 3;
+      margin-top: -210px;
+    }
+    .background-how-i-do-it {
+      width: 100%;
+      z-index: 1;
+
+      .text-how-i-do-it {
+        padding: 0;
+        margin-bottom: 40px;
+
+        h2.light {
+          margin-left: 30px;
+        }
+
+        .text-and-skills {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: auto;
+          padding: 0 30px;
+
+          .text {
+            grid-area: 1 / 1 / 2 / 3;
+          }
+        }
+      }
+    }
+    .photo-how-i-do-it {
+      height: 46vh;
+    }
+  }
+}
