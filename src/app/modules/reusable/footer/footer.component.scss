@@ -20,7 +20,7 @@
     margin-bottom: 200px;
   }
   .img-footer {
-    display: flex;
+    display: flex; 
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -46,4 +46,61 @@
       }
     }
   }
+}
+
+@media (max-width: 600px) { 
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 25px;
+      padding: 0 20px;
+    }
+    h2.dark {
+      margin-bottom: 45px;
+      font-size: 28px;
+      text-align: center;
+      padding: 0 20px;
+      span {
+        color: var(--secondary-color);
+      }
+    }
+  
+    a {
+      margin-bottom: 50px;
+      padding: 0 20px;
+    }
+    .img-footer {
+      display: flex; 
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 187px;
+      max-width: 1100px;
+      margin: 0 auto;
+      background-image: url("/assets/NY@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -256px;
+  
+      .logo {
+        margin-right: 20px;
+        display: flex;
+        .copyright {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          margin-right: 90px;
+          h4 {
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+  
 }
