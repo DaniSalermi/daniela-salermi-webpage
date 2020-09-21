@@ -1,9 +1,9 @@
 <div class="works-detail">
   <div class="first-section">
     <div class="project-detail">
-      <h3>projecto laboratoria</h3>
-      <h1>Superhambu</h1>
-      <div class="h1-style">Plataforma</div>
+      <h3>{{ projectData.subtitle }}</h3>
+      <h1>{{ projectData.title }}</h1>
+      <div class="h1-style">{{ projectData.category?.name }}</div>
       <button class="button dark">
         <span>Más info</span>
         <svg
@@ -23,7 +23,9 @@
 
     <div class="project-image">
       <img
-        src="assets/superhambu-home-mockup.png"
+        [src]="
+          'https://portafolio-cms.herokuapp.com' + projectData.headerPhoto?.url
+        "
         alt="Imagen inicio projecto"
       />
     </div>
@@ -31,47 +33,17 @@
 
   <div class="second-section">
     <div class="about-project">
-      <h3>el desafío</h3>
-      <h2>Plataforma de administración de comandas para restaurantes</h2>
+      <h3>{{ projectData.description?.subtitle }}</h3>
+      <h2>{{ projectData.description?.title }}</h2>
       <p class="about-text">
-        Superhambu fue nuestro primer desafío en Laboratoria, utilizando
-        frameworks (Angular 8). El sitema permite hacer el seguimiento de
-        atención a clientes dentro de restaurantes (en este caso una
-        hamburguesería), desde el momento en el que realiza su pedido, pasando
-        por la realización y hasta la entrega del mismo. Esta plataforma
-        resuelve los principales problemas de nuestro cliente, el ahorrar dinero
-        al no preparar las órdenes más de una vez, y entregar el pedido caliente
-        y de manera ordenada a sus clientes.
+        {{ projectData.description?.description }}
       </p>
     </div>
     <div class="tecnologies">
-      <div>
-        <h3>frontend</h3>
-        <p class="tech-detail">Angular 8</p>
+      <div *ngFor="let item of projectData.description?.list">
+        <h3>{{ item.title }}</h3>
+        <p class="tech-detail">{{ item.description }}</p>
         <div class="separator"></div>
-      </div>
-      <div>
-        <h3>otras tecnologías</h3>
-        <p class="tech-detail">CSS3, JavaScript (ES6), HTML5</p>
-        <div class="separator"></div>
-      </div>
-      <div>
-        <h3>Sitio web</h3>
-        <a href="https://burger-queens.herokuapp.com/home" target="_blank">
-          <p class="tech-detail">https://burger-queens.herokuapp.com/home</p>
-        </a>
-        <div class="separator"></div>
-      </div>
-      <div>
-        <h3>Repositorio</h3>
-        <a
-          href="https://github.com/NataGalvez/SCL010-Burger-Queen"
-          target="_blank"
-        >
-          <p class="tech-detail">
-            https://github.com/NataGalvez/SCL010-Burger-Queen
-          </p>
-        </a>
       </div>
     </div>
   </div>
